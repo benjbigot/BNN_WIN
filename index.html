@@ -1,0 +1,60 @@
+
+
+<html>
+
+<head>
+	<title>Broadcast news navigation/Digital Singal Processing</title>
+	<style type = "text/css">
+	.background{
+	width:700px;
+	height:500px;
+	background-image: url("videoNavi.JPG");
+	background-repeat:no-repeat;background-size:650px 510px;
+	}
+	table.center{
+	margin:100 auto;
+	}
+	</style>
+<body>
+<table class="center" align=center>
+<tr>
+<td class="background">
+	<form action="exeu.php" method="post">
+<table>
+<tr>
+<td>
+Type:
+</td>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="choice" name="choice" onChange="typeofvideo()">
+<option value="bnn" selected="selected">Broadcast News Navigation</option>
+<option value="lec">Digital Signal Processing Lectures</option>
+</select>
+</td>
+</tr>
+</table>
+<div id="kind"></div>
+
+
+</form>
+<script>
+typeofvideo();
+function typeofvideo()
+{
+	if(document.getElementById('choice').value=="bnn")
+	{	document.getElementById("kind").innerHTML='<table><tr><td>News URL:</td><td><input id="video" name="video" value="" type="text" size=50 ></td></tr> \
+		<tr><td>News Company:</td><td><input id="name" type="text" name="name" ></td></tr> \
+		<tr><td>Date of News (optional):</td><td><input id="date" value="" type="text" name="date" ></td></tr> \
+		<tr><td><i>(format in DD/MM/YYYY)</i></td></tr> \
+		<tr><td><input type="submit" value="Submit" class="submit"/></td></tr></table>'; 
+		}
+	else
+	{
+		document.getElementById("kind").innerHTML='<table><tr><td>Lecture Video:</td><td><input id="video" name="name" type="text" size=50></td></tr> \
+		<tr><td><input type="submit" value="Submit" class="submit"/></td></tr></table>';
+	}
+} 
+</script>
+</body>

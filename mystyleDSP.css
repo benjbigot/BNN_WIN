@@ -1,0 +1,293 @@
+div.scroll
+{ width: 950px; height: 380px; overflow-y: scroll;}
+.centerText{
+	text-align: center;
+}
+div.scroll3 {
+    position: relative;
+    width: 910px;
+    height: 90px;
+    border: 5px solid black;
+    overflow: hidden;
+}
+div.scroll2
+{ width: 900px; height: 105px;  overflow-x: scroll;}
+
+body{
+background-color: #0D0D0D;
+}
+#main
+{
+position:absolute;
+width:1000px;
+height:720px;
+margin-top:20px;
+margin-left:290px;
+background-color:#BFBFBF;
+}
+#list
+{
+position:absolute;
+width:1000px;
+height:470px;
+margin-top:210px;
+background-color:#404040;
+}
+.chromestyle{
+width: 99.8%;
+font-weight: bold;
+}
+
+.chromestyle:after{ /*Add margin between menu and rest of content in Firefox*/
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.chromestyle ul{
+border: 1px solid #BBB;
+width: 100%;
+background: url(chromebg.gif) center center repeat-x; /*THEME CHANGE HERE*/
+padding: 4px 0;
+margin: 0;
+text-align: center; /*set value to "left", "center", or "right"*/
+}
+
+.chromestyle ul li{
+display: inline;
+}
+
+.chromestyle ul li a{
+color: #494949;
+padding: 4px 7px;
+margin: 0;
+text-decoration: none;
+border-right: 1px solid #DADADA;
+}
+
+.chromestyle ul li a:hover, .chromestyle ul li a.selected{ /*script dynamically adds a class of "selected" to the current active menu item*/
+background: url(chromebg-over.gif) center center repeat-x; /*THEME CHANGE HERE*/
+}
+
+/* ######### Style for Drop Down Menu ######### */
+
+.dropmenudiv{
+margin-top:-25px;
+margin-left:-300px;
+position:absolute;
+top: 0;
+border: 1px solid #BBB; /*THEME CHANGE HERE*/
+border-bottom-width: 0;
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+background-color: white;
+width: 200px;
+visibility: hidden;
+}
+
+
+.dropmenudiv a{
+width: auto;
+opacity:0.9;
+display: block;
+text-indent: 3px;
+border-bottom: 1px solid #BBB; /*THEME CHANGE HERE*/
+padding: 2px 0;
+text-decoration: none;
+font-weight: bold;
+color: black;
+}
+
+* html .dropmenudiv a{ /*IE only hack*/
+width: 100%;
+}
+
+.dropmenudiv a:hover{ /*THEME CHANGE HERE*/
+background-color: #F0F0F0;
+}
+#bbn
+{
+	color: #0D0D0D;
+    float: left;
+    font-family: "Edwardian Script ITC";
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+#latest
+{
+	color: #E2FFFF;
+	float: left;
+    font-family: "Edwardian Script";
+    font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-left:20px;
+	margin-top:20px;
+}
+.TFtable tr:nth-child(odd)
+{
+	background:#b8d1f3;
+}
+.TFtable tr:nth-child(even)
+{
+	background:#dae5f4;
+}
+#middle
+{
+    width: 550px;
+}
+#least
+{
+	width: 220px;
+}
+#searchlist
+{
+	color: #E2FFFF;
+	float: left;
+    font-family: "Edwardian Script";
+    font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-left:20px;
+	margin-top:20px;
+}
+#topiclist
+{
+	color: #E2FFFF;
+	float: left;
+    font-family: "Edwardian Script";
+    font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-left:20px;
+	margin-top:20px;
+}
+#single
+{
+	color: #E2FFFF;
+	float: left;
+    font-family: "Edwardian Script";
+    font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-left:20px;
+	margin-top:20px;
+}
+#topp
+{	
+	width:500px;
+	color:#DADADA;
+	float: left;
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-left:20px;
+	margin-top:0px;
+}
+#story
+{
+	color:green;
+}
+hr {
+    margin: 60px 20;
+    border: 1px solid #f00;
+}
+#fill
+{
+	color:white;
+	width:960px;
+	margin-top:0px;
+	margin-left:20px;
+}
+#page
+{
+	margin-top:-60px;
+	margin-left:420px;
+	background-color:#414040;
+}
+
+#geo{
+	color: #E2FFFF;
+    width: 350px;
+    padding: 0;
+	font-family: "Edwardian Script";
+}
+a:visited
+{
+color: white;
+}
+a:link:active{
+color:red;
+}
+
+
+
+#search, 
+#submit {
+    float: left;
+}
+
+#search {
+	margin-left:270px;
+	margin-top:0px;
+    padding: 5px 9px;
+    height: 33px;
+    width: 380px;
+    border: 1px solid #a4c3ca;
+    font: normal 13px 'trebuchet MS', arial, helvetica;
+    background: #f1f1f1;
+    border-radius: 50px 3px 3px 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+
+/* ----------------------- */
+
+#submit
+{   
+	margin-left:20px;
+	margin-top:0px;
+    background-color: #6cbb6b;
+    background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 50px 50px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 35px;
+
+    padding: 0;
+    width: 90px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #23441e;    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#submit:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submit:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+#rad{
+	margin-left:330px;
+	margin-top:200px;
+}
